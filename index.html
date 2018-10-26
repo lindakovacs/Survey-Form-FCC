@@ -1,0 +1,142 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Survey Form - FreeCodeCamp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   <!-- <link rel='stylesheet prefetch' href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> 
+  <link rel='stylesheet prefetch' href='//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css>  -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  
+  <!-- <script type="text/javascript" src="js/script.js"></script> -->
+</head>
+
+<body>
+	<div class="text-box">
+		<h1 id="title">Survey Form - FreeCodeCamp</h1><hr>
+		  <p id="description">Let us know about your experience with us and how we can improve our services</p>
+	</div>
+	<div id="form-outer">
+	  <form id="survey-form" method="GET" action="">
+		<div class="rowTab">
+		  <div class="labels">
+			<label id="name-label" for="name">* Full Name: </label>
+		  </div>
+		  <div class="rightTab">
+			<input type="text" name="name" id="name" class="input-field" placeholder="Enter your Full Name" required autofocus>
+		  </div>
+		</div>
+		<div class="rowTab">
+		  <div class="labels">
+			<label id="email-label" for="email">* Email: </label>
+		  </div>
+		  <div class="rightTab">
+			<input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+		  </div>
+		</div>
+		<div class="rowTab">
+		  <div class="labels">
+			<label id="number-label" for="years">* How many years did you work with us? </label>
+		  </div>
+		  <div class="rightTab">
+			<input type="number" name="years" id="number" min="1" max="100" class="input-field" required placeholder="Enter number of years worked">
+		  </div>
+		</div>
+		<div class="rowTab">
+		  <div class="labels">
+			<label for="decisionToReturn">What factors would influence and enhance your decision to return to work with us?</label>
+		  </div>
+		  <div class="rightTab">
+			<select id="dropdown" name="decisionToReturn" class="dropdown">
+			  <option disabled selected value>Select an option</option>
+			  <option  value="opportunities">Better work opportunities</option>
+			  <option value="challenging">Challenging work</option>
+			  <option value="training">Additional skills training program</option>
+			  <option value="supervision">Engaged supervision</option>
+			  <option value="treatment">Fair or equal treatment</option>
+			</select>
+		  </div>
+		</div>
+		<div class="rowTab">
+		  <div class="labels">
+			<label for="userRating">* How likely is that you would recommend our Company to a friend?</label>
+		  </div>
+		  <div class="rightTab">
+			<ul style="list-style: none;">
+			  <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+			  <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+			  <li class="radio"><label>Not sure<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+			</ul>
+		  </div>
+		</div>
+		<div class="rowTab">
+		  <div class="labels">
+			<label for="most-like">What do you like most in our Company: </label>
+		  </div>
+		  <div class="rightTab">
+			<select id="most-like" name="mostLike" class="dropdown">
+		  <option disabled selected value>Select an option</option>
+		  <option value="team">The Team</option>
+		  <option value="leadearship">The Leadearship</option>
+		  <option value="projects">The Projects</option>
+		  <option value="learn">The opprtunity to learn</option>
+		</select>
+		  </div>
+		</div>
+		<div class="rowTab">
+		  <div class="labels">
+			<label for="preferences">Things that should be improved in the future<br>(Check all that apply): </label>
+		  </div>
+		  <div class="rightTab">
+			<ul id="preferences" style="list-style: none;">
+			  <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">The orientation received</label></li>
+			  <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">The job duties</li>
+			  <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Clear and adequate directions</label></li>
+			  <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Performance expectations reasonable and clear</label></li>
+			  <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Conversations with the supervisors or managers</label></li>
+			  <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Open Meetings</label></li>
+			  <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Company Forum for Employees</label></li>
+			  <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Additional Courses</label></li>
+			</ul>
+		  </div>
+		</div>
+		<div class="rowTab">
+		  <div class="labels">
+			<label for="comments">Do you have any Comments or Suggestions?</label>
+		  </div>
+		  <div class="rightTab">
+			<textarea id="comments" class="input-field" style="height:75px;resize:vertical;" name="comment" placeholder="Enter your comment or suggestions here..."></textarea>
+		  </div>
+		</div>
+		<button id="submit" type="submit">Submit</button>
+	  </form>
+	</div>
+<!--Footer-->
+	
+	<footer id="footer" class="footer text-center">
+	  <div class="contact">
+		<div class="row">
+			<a href="https://www.facebook.com/lindakovacsart" class="btn btn-default btn-social btn-facebook-f" target="_blank"><span class="fa fa-facebook-f"></span> Facebook</a>
+			<a href="https://twitter.com/lindakovacsart" class="btn btn-default btn-social btn-twitter" target="_blank"><span class="fa fa-twitter"></span> Twitter</a>
+			<a href="https://plus.google.com/u/1/112468176480762133222" class="btn btn-blue btn-social btn-google-plus" target="_blank"><span class="fa fa-google-plus"></span> Google+</a>
+			<a href="https://www.linkedin.com/in/lindakovacsart" class="btn btn-default btn-social btn-linkedin" target="_blank"><span class="fa fa-linkedin"></span> LinkedIn</a> 
+			<a href="https://github.com/lindakovacs" class="btn btn-default btn-social btn-github" target="_blank"><span class="fa fa-github"></span> GitHub</a>
+			<a href="https://www.freecodecamp.org/lindakovacs" class="btn btn-default btn-social btn-freeCodeCamp" target="_blank"><i class="fa fa-free-code-camp"></i> FreeCodeCamp </a>
+			<a href="https://codepen.io/lindakovacs" class="btn btn-default btn-social btn-codepen" target="_blank"><i class="fa fa-codepen"></i>Codepen</a>		
+		</div>
+		  <p>&copy 2018 Made with &#10084; by Linda Kovacs</a></p>
+	</footer>
+ 
+  </div>
+	
+<!--End Footer-->		
+
+<!-- <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/holder/2.8.1/holder.min.js'></script> -->
+</body>
+</html>
